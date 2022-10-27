@@ -28,13 +28,13 @@ REST API для Yatube. Документация: http://127.0.0.1/redoc/.
 - DB_PORT= порт для подключения к БД 
 
 #### Описание команд для запуска приложения в контейнерах:
-Перейти в директорию "infra/" и выполнить оттуда команду: 
-``` docker-compose up ```.\
-По окончании создания и запуска контейнеров выполнить миграции: 
-```docker-compose exec web python manage.py migrate```.\
-Создать суперпользователя: 
-```docker-compose exec web python manage.py createsuperuser```.\
-Собрать статику: 
+Перейти в директорию "infra/" и выполнить оттуда команду:\
+``` docker-compose up ```.
+По окончании создания и запуска контейнеров выполнить миграции:\
+```docker-compose exec web python manage.py migrate```.
+Создать суперпользователя:\
+```docker-compose exec web python manage.py createsuperuser```.
+Собрать статику:\
 ```docker-compose exec web python manage.py collectstatic --no-input```.
 
 #### Описание команды для заполнения базы данными.
