@@ -40,7 +40,6 @@ REST API для Yatube. Документация: http://127.0.0.1/redoc/.
 #### Описание команды для заполнения базы данными.
 Выполнить из директории "infra/"\
 ```docker-compose cp fixtures.json web:/app```. \
-
 ```docker-compose exec web python manage.py loaddata fixtures.json```
 
 ### Авторы проекта:
